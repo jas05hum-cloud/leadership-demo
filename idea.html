@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Leadership Demo</title>
+</head>
+<body style="font-family: Arial; padding: 40px;">
+<h1>Leadership Demo App</h1>
+<p id="text">Click the button to show a leadership tip.</p>
+
+<button onclick="showTip()">Show Tip</button>
+
+<script>
+const tips = [
+  "Lead by example.",
+  "Communicate with clarity.",
+  "Ask questions before giving direction.",
+  "Build trust by keeping your word."
+];
+
+function showTip() {
+  const random = Math.floor(Math.random() * tips.length);
+  document.getElementById('text').innerText = tips[random];
+}
+</script>
+
+</body>
+</html>
